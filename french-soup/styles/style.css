@@ -3,7 +3,80 @@ h1, body, html, main {
   margin: 0;
 }
 /*Import the font and set the default size*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
+}
+
+header{
+  background-image: url("../images/soup.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position-y: bottom;
+}
+
+header > h1{
+  color: white;
+  font-size: 6rem;
+  text-align: center;
+  line-height: 70vh;
+  font-weight: 100;
+  word-spacing: 30px;
+}
+
+section {
+  padding: 1.5rem 12rem;
+}
+
+section>p,
+h3 {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+}
+
+section>img {
+  display: block;
+  margin: 0 auto;
+  height: 5rem;
+}
+
+hr {
+  height: 0.1rem;
+}
+
+ul{
+  padding-left: 1rem;
+}
+
+section>ul>li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+section>ul>li:before {
+  content: "- ";
+}
+
+section>img:last-child {
+  display: block;
+  margin: 0 auto;
+  height: 7rem;
+}
+
+ol {
+  counter-reset: list;
+  padding-left: 1rem;
+}
+
+ol>li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+ol>li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
 }
